@@ -37,4 +37,3 @@ public class Extracto {
         return this.transacciones.movimientoArrayList();
     }
 }
-s
