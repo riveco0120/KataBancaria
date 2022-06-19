@@ -4,6 +4,10 @@ public class Balance {
 
     private  Double balance;
 
+    public Balance(){
+
+    }
+
     public Balance(Double balance) {
         this.balance = balance;
     }
