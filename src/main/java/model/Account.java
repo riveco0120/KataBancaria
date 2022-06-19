@@ -3,6 +3,8 @@ package model;
 import ObjetoDeValor.CuentaID;
 import Operaciones.Extracto;
 
+import java.io.PrintStream;
+
 public class Account {
 
     private final CuentaID cuentaId;
@@ -13,17 +15,17 @@ public class Account {
         this.extracto = extracto;
     }
 
-    void deposit(double amount, String date) {
+    public void deposit(double amount, String date) {
         this.extracto.depositar(amount, date);
 
     }
 
-    void withdraw(double amount, String date){
+    public void withdraw(double amount, String date){
         this.extracto.Retirar(amount, date);
 
     }
 
-    void printStatements() {
+    public void printStatements(PrintStream out) {
         this.extracto.listarTransacciones().forEach(m -> System.out.println(m.toString()));
     }
 
