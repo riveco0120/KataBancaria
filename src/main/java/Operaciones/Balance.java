@@ -2,13 +2,13 @@ package Operaciones;
 
 public class Balance {
 
-    private  Double balance;
+    private double balance;
 
     public Balance(){
 
     }
 
-    public Balance(Double balance) {
+    public Balance(double balance) {
         this.balance = balance;
     }
 
